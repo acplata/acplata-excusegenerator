@@ -1,11 +1,20 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+const who = ['The dog', 'My grandma', 'His turtle', 'My bird'];
+const action = ['ate', 'peed', 'crushed', 'broke'];
+const what = ['my homework', 'the keys', 'the car'];
+const when = ['before the class', 'right on time', 'when I finished', 'during my lunch', 'while I was praying'];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+const parrafo = document.getElementById("excuse");
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+function excuseGenerator(array){
+  const getExcuseGenerator = Math.floor(Math.random() * array.length);
+  return array[getExcuseGenerator];
+}
+
+const randomWho = excuseGenerator(who);
+const randomAction = excuseGenerator(action);
+const randomWhat = excuseGenerator(what);
+const randomWhen = excuseGenerator(when);
+console.log(randomWho,randomAction,randomWhat,randomWhen)
+
+const excuse = excuseGenerator
+parrafo.innerText = excuse;
