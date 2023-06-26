@@ -16,5 +16,5 @@ const randomWhat = excuseGenerator(what);
 const randomWhen = excuseGenerator(when);
 console.log(randomWho,randomAction,randomWhat,randomWhen)
 
-const excuse = excuseGenerator
+const excuse = ` ${randomWho} ${randomAction} ${randomWhat} ${randomWhen}`;
 parrafo.innerText = excuse;
